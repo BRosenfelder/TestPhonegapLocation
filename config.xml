@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.brosenfelder.testphonegap"
+        id        = "com.brosenfelder.testphonegaplocation"
         version   = "2.0.0">
-    <name>Test Phonegap</name>
+    <name>Test Phonegap Location</name>
 
     <description>
-        Test von Phonegap.
+        Test Phonegap Location.
     </description>
 
     <author href="http://www.consultnetwork.at" email="bernhard.rosenfelder@consultnetwork.at">
