@@ -28,7 +28,8 @@
             element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' +
                             'Longitude: ' + position.coords.longitude + '<br />';
             var ielement = document.getElementById('i');
-            ielement.innerHTML = "i: " + i; 
+            ielement.innerHTML = "i: " + i;
+            i = i + 1;
         }
 
         // onError Callback receives a PositionError object
