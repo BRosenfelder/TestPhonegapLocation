@@ -11,6 +11,7 @@
         document.addEventListener("deviceready", onDeviceReady, false);
 
         var watchID = null;
+        var i = 0;
 
         // Cordova is ready
         //
@@ -25,21 +26,23 @@
         function onSuccess(position) {
             var element = document.getElementById('geolocation');
             element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' +
-                            'Longitude: ' + position.coords.longitude + '<br />' +
-                            '<hr />' + element.innerHTML;
+                            'Longitude: ' + position.coords.longitude + '<br />';
+            var ielement = document.getElementById('i');
+            ielement.innerHTML = "i: " + i; 
         }
 
         // onError Callback receives a PositionError object
         //
         function onError(error) {
-            alert('code: ' + error.code + '\n' +
-              'message: ' + error.message + '\n');
+//            alert('code: ' + error.code + '\n' +
+//              'message: ' + error.message + '\n');
         }
 
     </script>
   </head>
   <body>
-    <p id="version">Version 1.1</p>
+    <p id="version">Version 1.2</p>
+    <p id="i">i: 0</p>
     <p id="geolocation">Watching geolocation...</p>
   </body>
 </html>
