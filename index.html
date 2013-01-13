@@ -12,6 +12,7 @@
 
         var watchID = null;
         var i = 0;
+        var saveInterval = setInterval(savePosition, 1500);
 
         // Cordova is ready
         //
@@ -37,6 +38,19 @@
         function onError(error) {
 //            alert('code: ' + error.code + '\n' +
 //              'message: ' + error.message + '\n');
+        }
+
+        function savePosition() {
+
+            //var latitude = "empty";
+            //var longitude = "empty";
+            //if (navigator.geolocation) {
+
+            //    navigator.geolocation.getCurrentPosition(onAfterGetPosition);
+
+            //}
+            ielement.innerHTML = "i: " + i;
+            i = i + 1;
         }
 
     </script>
